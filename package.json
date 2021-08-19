@@ -1,0 +1,53 @@
+{
+  "name": "node-06-restserver",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node postman/newman",
+    "dev": "npx nodemon src",
+    "start": "node src/index",
+    "prepare": "husky install",
+    "lint-staged": "lint-staged"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mauriyapura/node-06-restserver.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mauriyapura/node-06-restserver/issues"
+  },
+  "lint-staged": {
+    "*.{js,json}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "homepage": "https://github.com/mauriyapura/node-06-restserver#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "express-validator": "^6.12.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.13",
+    "mongoose-paginate-v2": "^1.4.1",
+    "mongoose-unique-validator": "^2.0.3",
+    "morgan": "^1.10.0",
+    "mysql2": "^2.3.0",
+    "sequelize": "^6.6.5",
+    "swagger-ui-express": "^4.1.6",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "husky": "^7.0.0",
+    "lint-staged": "^11.1.2",
+    "newman": "^5.2.4",
+    "newman-reporter-htmlextra": "^1.21.0",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.3.2"
+  }
+}
